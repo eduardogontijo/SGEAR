@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{984AE272-A205-4A63-8504-A121CD0AB7FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IFSP.ADS.Web</RootNamespace>
+    <AssemblyName>IFSP.ADS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="app\category\manageCategories.html" />
+    <Content Include="app\category\manageCategoriesController.js" />
+    <Content Include="app\common\common.js" />
+    <Content Include="app\global.js" />
+    <Content Include="app\services\categoryService.js" />
+    <Content Include="index.html" />
+    <Content Include="scripts\lib\angular-route\angular-route.js" />
+    <Content Include="scripts\lib\angular-route\angular-route.min.js" />
+    <Content Include="scripts\lib\angular-route\index.js" />
+    <Content Include="scripts\lib\angular\angular-csp.css" />
+    <Content Include="scripts\lib\angular\angular.js" />
+    <Content Include="scripts\lib\angular\angular.min.js" />
+    <Content Include="scripts\lib\angular\index.js" />
+    <Content Include="scripts\lib\jquery\AUTHORS.txt" />
+    <Content Include="scripts\lib\jquery\dist\jquery.js" />
+    <Content Include="scripts\lib\jquery\dist\jquery.min.js" />
+    <Content Include="scripts\lib\jquery\external\sizzle\dist\sizzle.js" />
+    <Content Include="scripts\lib\jquery\external\sizzle\dist\sizzle.min.js" />
+    <Content Include="scripts\lib\jquery\external\sizzle\LICENSE.txt" />
+    <Content Include="scripts\lib\jquery\LICENSE.txt" />
+    <Content Include="scripts\lib\jquery\src\ajax.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\jsonp.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\load.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\parseJSON.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\parseXML.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\script.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\var\location.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\var\nonce.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\var\rquery.js" />
+    <Content Include="scripts\lib\jquery\src\ajax\xhr.js" />
+    <Content Include="scripts\lib\jquery\src\attributes.js" />
+    <Content Include="scripts\lib\jquery\src\attributes\attr.js" />
+    <Content Include="scripts\lib\jquery\src\attributes\classes.js" />
+    <Content Include="scripts\lib\jquery\src\attributes\prop.js" />
+    <Content Include="scripts\lib\jquery\src\attributes\support.js" />
+    <Content Include="scripts\lib\jquery\src\attributes\val.js" />
+    <Content Include="scripts\lib\jquery\src\callbacks.js" />
+    <Content Include="scripts\lib\jquery\src\core.js" />
+    <Content Include="scripts\lib\jquery\src\core\access.js" />
+    <Content Include="scripts\lib\jquery\src\core\init.js" />
+    <Content Include="scripts\lib\jquery\src\core\parseHTML.js" />
+    <Content Include="scripts\lib\jquery\src\core\ready.js" />
+    <Content Include="scripts\lib\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="scripts\lib\jquery\src\css.js" />
+    <Content Include="scripts\lib\jquery\src\css\addGetHookIf.js" />
+    <Content Include="scripts\lib\jquery\src\css\adjustCSS.js" />
+    <Content Include="scripts\lib\jquery\src\css\curCSS.js" />
+    <Content Include="scripts\lib\jquery\src\css\defaultDisplay.js" />
+    <Content Include="scripts\lib\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="scripts\lib\jquery\src\css\showHide.js" />
+    <Content Include="scripts\lib\jquery\src\css\support.js" />
+    <Content Include="scripts\lib\jquery\src\css\var\cssExpand.js" />
+    <Content Include="scripts\lib\jquery\src\css\var\getStyles.js" />
+    <Content Include="scripts\lib\jquery\src\css\var\isHidden.js" />
+    <Content Include="scripts\lib\jquery\src\css\var\rmargin.js" />
+    <Content Include="scripts\lib\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="scripts\lib\jquery\src\css\var\swap.js" />
+    <Content Include="scripts\lib\jquery\src\data.js" />
+    <Content Include="scripts\lib\jquery\src\data\Data.js" />
+    <Content Include="scripts\lib\jquery\src\data\var\acceptData.js" />
+    <Content Include="scripts\lib\jquery\src\data\var\dataPriv.js" />
+    <Content Include="scripts\lib\jquery\src\data\var\dataUser.js" />
+    <Content Include="scripts\lib\jquery\src\deferred.js" />
+    <Content Include="scripts\lib\jquery\src\deprecated.js" />
+    <Content Include="scripts\lib\jquery\src\dimensions.js" />
+    <Content Include="scripts\lib\jquery\src\effects.js" />
+    <Content Include="scripts\lib\jquery\src\effects\animatedSelector.js" />
+    <Content Include="scripts\lib\jquery\src\effects\Tween.js" />
+    <Content Include="scripts\lib\jquery\src\event.js" />
+    <Content Include="scripts\lib\jquery\src\event\ajax.js" />
+    <Content Include="scripts\lib\jquery\src\event\alias.js" />
+    <Content Include="scripts\lib\jquery\src\event\focusin.js" />
+    <Content Include="scripts\lib\jquery\src\event\support.js" />
+    <Content Include="scripts\lib\jquery\src\event\trigger.js" />
+    <Content Include="scripts\lib\jquery\src\exports\amd.js" />
+    <Content Include="scripts\lib\jquery\src\exports\global.js" />
+    <Content Include="scripts\lib\jquery\src\intro.js" />
+    <Content Include="scripts\lib\jquery\src\jquery.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\buildFragment.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\getAll.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\setGlobalEval.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\support.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\var\rscriptType.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\var\rtagName.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\wrapMap.js" />
+    <Content Include="scripts\lib\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="scripts\lib\jquery\src\offset.js" />
+    <Content Include="scripts\lib\jquery\src\outro.js" />
+    <Content Include="scripts\lib\jquery\src\queue.js" />
+    <Content Include="scripts\lib\jquery\src\queue\delay.js" />
+    <Content Include="scripts\lib\jquery\src\selector-native.js" />
+    <Content Include="scripts\lib\jquery\src\selector-sizzle.js" />
+    <Content Include="scripts\lib\jquery\src\selector.js" />
+    <Content Include="scripts\lib\jquery\src\serialize.js" />
+    <Content Include="scripts\lib\jquery\src\traversing.js" />
+    <Content Include="scripts\lib\jquery\src\traversing\findFilter.js" />
+    <Content Include="scripts\lib\jquery\src\traversing\var\dir.js" />
+    <Content Include="scripts\lib\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="scripts\lib\jquery\src\traversing\var\siblings.js" />
+    <Content Include="scripts\lib\jquery\src\var\arr.js" />
+    <Content Include="scripts\lib\jquery\src\var\class2type.js" />
+    <Content Include="scripts\lib\jquery\src\var\concat.js" />
+    <Content Include="scripts\lib\jquery\src\var\document.js" />
+    <Content Include="scripts\lib\jquery\src\var\documentElement.js" />
+    <Content Include="scripts\lib\jquery\src\var\hasOwn.js" />
+    <Content Include="scripts\lib\jquery\src\var\indexOf.js" />
+    <Content Include="scripts\lib\jquery\src\var\pnum.js" />
+    <Content Include="scripts\lib\jquery\src\var\push.js" />
+    <Content Include="scripts\lib\jquery\src\var\rcssNum.js" />
+    <Content Include="scripts\lib\jquery\src\var\rnotwhite.js" />
+    <Content Include="scripts\lib\jquery\src\var\slice.js" />
+    <Content Include="scripts\lib\jquery\src\var\support.js" />
+    <Content Include="scripts\lib\jquery\src\var\toString.js" />
+    <Content Include="scripts\lib\jquery\src\wrap.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\athlete\" />
+    <Folder Include="app\directives\" />
+    <Folder Include="content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\lib\angular-route\.bower.json" />
+    <Content Include="scripts\lib\angular-route\angular-route.min.js.map" />
+    <Content Include="scripts\lib\angular-route\bower.json" />
+    <Content Include="scripts\lib\angular-route\LICENSE.md" />
+    <Content Include="scripts\lib\angular-route\package.json" />
+    <Content Include="scripts\lib\angular-route\README.md" />
+    <Content Include="scripts\lib\angular\.bower.json" />
+    <Content Include="scripts\lib\angular\angular.min.js.gzip" />
+    <Content Include="scripts\lib\angular\angular.min.js.map" />
+    <Content Include="scripts\lib\angular\bower.json" />
+    <Content Include="scripts\lib\angular\LICENSE.md" />
+    <Content Include="scripts\lib\angular\package.json" />
+    <Content Include="scripts\lib\angular\README.md" />
+    <Content Include="scripts\lib\jquery\.bower.json" />
+    <Content Include="scripts\lib\jquery\bower.json" />
+    <Content Include="scripts\lib\jquery\dist\jquery.min.map" />
+    <Content Include="scripts\lib\jquery\external\sizzle\dist\sizzle.min.map" />
+    <Content Include="scripts\lib\jquery\README.md" />
+    <Content Include="scripts\lib\jquery\src\.jshintrc" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64602</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12346</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

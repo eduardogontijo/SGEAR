@@ -1,0 +1,36 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-app="app">
+    <div class="wr-site" ng-class="pageClass">
+        <header-top></header-top>
+        <div data-ng-view>
+        </div>
+    </div>
+
+    <!--Libs-->
+    <script src="scripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/lib/angular/angular.min.js"></script>
+    <script src="scripts/lib/angular-route/angular-route.min.js"></script>
+    <!--Libs-->
+
+    <!--Config-->
+    <script src="app/app.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/global.js"></script>
+    <script src="app/common/common.js"></script>
+    <!--Config-->
+
+    <!--Services-->
+    <script src="app/services/categoryService.js"></script>
+    <!--Services-->
+
+    <!--Controllers-->
+    <script src="app/category/manageCategoriesController.js"></script>
+    <!--Controllers-->
+</body>
+</html>

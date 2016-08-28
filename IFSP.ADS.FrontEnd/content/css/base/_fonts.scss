@@ -1,0 +1,11 @@
+//MAIN FONTS 
+
+@include font-face($primaryFont, '#{$primaryFontPath}/officina-serif-os-itc-tt-book');
+@include font-face($primaryFontBold, '#{$primaryFontPath}/officina-serif-os-itc-tt-bold');
+
+@include font-face($secondaryFont, '#{$secondaryFontPath}/Helvetica');
+@include font-face($secondaryFontBold, '#{$secondaryFontPath}/Helvetica-Bold');
+
+@include font-face($tertiaryFont, '#{$tertiaryFontPath}/Ubuntu-Regular');
+@include font-face($tertiaryFontBold, '#{$tertiaryFontPath}/Ubuntu-Bold');
+@include font-face($tertiaryFontLight, '#{$tertiaryFontPath}/Ubuntu-Light-Regular');

@@ -1,0 +1,207 @@
+.bx-showcase {
+    position: relative;
+    z-index: 1;
+
+    .mn-categories {
+        display: table;
+        width: 100%;
+
+        ul {
+            display: table-row;
+
+            li {
+                display: table-cell;
+                height: 20px;
+                background-color: #fff;
+                text-align: center;
+                border-right: 1px solid #eaedf1;
+                border-bottom: 1px solid #eaedf1;
+                @include transition(all, 0.5s, ease, 0s);
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                &:hover {
+                    background-color: $mainColor;
+
+                    a {
+                        color: #fff;
+
+                        .ico {
+                            background-position-y: bottom;
+                        }
+                    }
+                }
+
+                a {
+                    font: {
+                        family: $primaryFontBold;
+                    }
+
+                    color: $mainColor;
+                    text-align: center;
+                    padding: 23px 10px;
+                    display: block;
+
+                    .ico {
+                        width: 27px;
+                        height: 27px;
+                        display: block;
+                        float: left;
+                        margin: -6px 0 0 0;
+                        background-repeat: no-repeat;
+                        background-position: center top;
+
+                        &.ico-destaque {
+                            background-image: url(#{$imgPath}/comum/ico-destaques.png);
+                        }
+
+                        &.ico-pre-estreia {
+                            background-image: url(#{$imgPath}/comum/ico-pre-estreia.png);
+                        }
+
+                        &.ico-entretenimento {
+                            background-image: url(#{$imgPath}/comum/ico-entretenimento.png);
+                        }
+
+                        &.ico-gastronomia {
+                            background-image: url(#{$imgPath}/comum/ico-gastronomia.png);
+                        }
+
+                        &.ico-compras {
+                            background-image: url(#{$imgPath}/comum/ico-compras.png);
+                        }
+
+                        &.ico-viagens {
+                            background-image: url(#{$imgPath}/comum/ico-viagens.png);
+                        }
+
+                        &.ico-bem-estar {
+                            background-image: url(#{$imgPath}/comum/ico-bem-estar.png);
+                        }
+
+                        &.ico-vivo-valoriza {
+                            background-image: url(#{$imgPath}/comum/ico-vivo-valoriza.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .showcase {
+        display: table;
+        width: 100%;
+        margin-top: 40px;
+
+        ul {
+            margin: 0 -15px;
+
+            li {
+                float: left;
+                width: 370px;
+                height: 218px;
+                margin: 0 15px 50px 15px;
+                border-bottom: 3px solid lighten($mainColor, 20%);
+                background-color: #f0f2f5;
+                //background: url(#{$imgPath}/comum/gradient-border.png) no-repeat left bottom;
+                .showcase-item {
+
+                    .showcase-img {
+                        float: left;
+                        width: 50%;
+                    }
+
+                    .showcase-description {
+                        float: left;
+                        width: 50%;
+                        padding: 20px;
+                        @include box-sizing;
+
+                        p {
+                            &.categories {
+                                color: #aaaaaa;                                
+                            }
+
+                            &.local {
+                                color: $mainColor;
+                            }
+
+                            &.description {
+                                color: #414141;
+                                margin: 12px 0;
+
+                                font: {
+                                    family: $primaryFontBold;
+                                    size: 22px;
+                                }
+                            }
+
+                            &.points {
+                                color: $mainColor;
+
+                                span {
+                                    font: {
+                                        family: $primaryFontBold;
+                                        size: 22px;
+                                    }
+
+
+                                    &.website {
+                                        color: #aaaaaa;
+
+                                        font: {
+                                            family: $primaryFont;
+                                            size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bx-showcase {
+        .mn-categories {
+            ul {
+                li {
+                    a {
+                        padding: 23px 3px;
+                    }
+                }
+            }
+        }
+
+        .showcase {
+            ul {
+                margin: 0 -6px;
+
+                li {
+                    width: 320px;
+                    height: 189px;
+                    margin: 0 5px 20px 5px;
+
+                    &:last-child {
+                        margin-bottom: 40px;
+                    }
+
+                    .showcase-item {
+                        .showcase-description {
+                            p {
+                                &.description {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

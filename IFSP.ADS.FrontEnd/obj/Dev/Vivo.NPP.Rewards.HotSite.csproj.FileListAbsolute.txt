@@ -1,0 +1,8 @@
+C:\TFS\GrupoLtm\B2C\Vivo\NPP\_Branches\20160718_Phase2Dev\4-FrontEnd\Vivo.NPP.Rewards.HotSite\bin\Vivo.NPP.Rewards.HotSite.dll.config
+C:\TFS\GrupoLtm\B2C\Vivo\NPP\_Branches\20160718_Phase2Dev\4-FrontEnd\Vivo.NPP.Rewards.HotSite\bin\Vivo.NPP.Rewards.HotSite.XML
+C:\TFS\GrupoLtm\B2C\Vivo\NPP\_Branches\20160718_Phase2Dev\4-FrontEnd\Vivo.NPP.Rewards.HotSite\bin\Vivo.NPP.Rewards.HotSite.dll
+C:\TFS\GrupoLtm\B2C\Vivo\NPP\_Branches\20160718_Phase2Dev\4-FrontEnd\Vivo.NPP.Rewards.HotSite\bin\Vivo.NPP.Rewards.HotSite.pdb
+C:\TFS\GrupoLtm\B2C\Vivo\NPP\_Branches\20160718_Phase2Dev\4-FrontEnd\Vivo.NPP.Rewards.HotSite\bin\Vivo.NPP.Rewards.HotSite.dll.CodeAnalysisLog.xml
+C:\TFS\GrupoLtm\B2C\Vivo\NPP\_Branches\20160718_Phase2Dev\4-FrontEnd\Vivo.NPP.Rewards.HotSite\bin\Vivo.NPP.Rewards.HotSite.dll.lastcodeanalysissucceeded
+C:\TFS\GrupoLtm\B2C\Vivo\NPP\_Branches\20160718_Phase2Dev\4-FrontEnd\Vivo.NPP.Rewards.HotSite\obj\Dev\Vivo.NPP.Rewards.HotSite.dll
+C:\TFS\GrupoLtm\B2C\Vivo\NPP\_Branches\20160718_Phase2Dev\4-FrontEnd\Vivo.NPP.Rewards.HotSite\obj\Dev\Vivo.NPP.Rewards.HotSite.pdb

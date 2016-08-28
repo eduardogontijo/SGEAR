@@ -1,0 +1,161 @@
+//MIX INs
+
+@mixin box ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+
+    -webkit-animation: $animations;
+    -moz-animation: $animations;
+    -o-animation: $animations;
+    animation: $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin opacity($value) {
+    $IEValue: $value*100;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+    filter: alpha(opacity=$IEValue);
+    opacity: $value;
+}
+
+@mixin box-sizing($box-model: border-box) {
+    -webkit-box-sizing: $box-model;
+    -moz-box-sizing: $box-model;
+    box-sizing: $box-model;
+}
+
+@mixin transition($property, $duration, $timing-function, $delay) {
+    -webkit-transition: $property, $duration, $timing-function, $delay;
+    -moz-transition: $property, $duration, $timing-function, $delay;
+    -ms-transition: $property, $duration, $timing-function, $delay;
+    -o-transition: $property, $duration, $timing-function, $delay;
+    transition: $property, $duration, $timing-function, $delay;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin alpha-attribute($attribute, $color, $background) {
+    $percent: alpha($color) * 100%;
+    $opaque: opacify($color, 1);
+    $solid-color: mix($opaque, $background, $percent);
+    #{$attribute}: $solid-color;
+    #{$attribute}: $color;
+}
+
+//fonts
+@mixin font-face($name, $path, $weight: normal, $style: normal, $exts: eot woff ttf svg) {
+    $src: null;
+
+    $extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_") );
+
+    $formats: ( otf: "opentype", ttf: "truetype" );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// rotate
+@mixin rotate ($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+
+// translate
+@mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+// skew
+@mixin skew ($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin text-shadow($left, $top, $blur, $colorHex) {
+    -webkit-box-shadow: $left $top $blur $colorHex;
+    -moz-box-shadow: $left $top $blur $colorHex;
+    box-shadow: $left $top $blur $colorHex;
+}
+
+@mixin box-shadow($left, $top, $blur, $spread, $colorRGBA, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $left $top $blur $spread $colorRGBA;
+        -moz-box-shadow: inset $left $top $blur $spread $colorRGBA;
+        box-shadow: inset $left $top $blur $spread $colorRGBA;
+    }
+    @else {
+        -webkit-box-shadow: $left $top $blur $spread $colorRGBA;
+        -moz-box-shadow: $left $top $blur $spread $colorRGBA;
+        box-shadow: $left $top $blur $spread $colorRGBA;
+    }
+}
+
+@mixin height($height, $line-height) {
+    height: $height;
+    line-height: $line-height;
+}
+
+@mixin grayscale($value) {
+    -webkit-filter: #{"grayscale(#{$value})"};
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter:#{"grayscale(#{$value})"};
+}
+

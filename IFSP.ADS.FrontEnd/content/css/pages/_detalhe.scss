@@ -1,0 +1,118 @@
+.wr-details {
+    .wr-content {
+        .ct {
+            padding: 85px 100px;
+            @include box-sizing;
+            border: 1px solid #dbdddf;
+        }
+
+        .bx-tabs {
+            background: #fff;
+            margin-top: 70px;
+
+            .ct {
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+}
+
+.col {
+    width: 50%;
+}
+
+.bx-details {
+    width: 100%;
+    display: table;
+
+    .details-img {
+        .highlight-img {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        .thumbs {
+            margin-top: 50px;
+
+
+            .thumb {
+                float: left;
+                margin: 0 5px;
+                border-bottom: 3px solid $mainColor;
+
+                &.active {
+                    border-color: $secondaryColor;
+                }
+
+                a {
+                    display: block;
+                    line-height: 0;
+                }
+            }
+        }
+    }
+
+    .details-description {
+
+        h3 {
+            font: {
+                family: $primaryFontBold;
+                size: 36px;
+            }
+
+            color: $mainColor;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #aaaaaa;
+            font-family: $secondaryFont;
+        }
+
+        ul {
+            margin: 10px 0;
+            width: 100%;
+            display: table;
+
+            li {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                width: 50%;
+                height: 120px;
+                border: 1px solid #dbdddf;
+
+                &.logo {
+                    background-color: #fff;
+                }
+
+                &.points {
+                    background-color: #eaedf1;
+                    color: $mainColor;
+                    font:{
+                        family: $primaryFontBold;
+                        size: 16px;
+                    }
+
+                    span {
+                        display: block;
+
+                        font: {
+                            family: $primaryFontBold;
+                            size: 36px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-enjoy-now {
+            max-width: 242px;
+            margin: 15px 0 0 0;
+        }
+    }
+}

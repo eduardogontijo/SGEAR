@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="4.0"
+         DefaultTargets="Build" 
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <OutDir>$(MSBuildThisFileDirectory)\..\..\bin</OutDir>
+    <Configuration>Release</Configuration>
+    <ProjectProperties>
+        OutDir=$(OutDir);
+        Configuration=$(Configuration);
+    </ProjectProperties>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Solution Include="$(MSBuildThisFileDirectory)\*.csproj" />    
+  </ItemGroup>
+  
+  <ItemGroup>
+    <SolutionRootDir Include="$(MSBuildProjectDirectory)\..\..\..\" />
+  </ItemGroup>
+
+  <Target Name="RestorePackages">        
+    <Exec Command="&quot;e:\Software\NuGet.exe&quot; restore" WorkingDirectory="@(SolutionRootDir)" />
+  </Target>
+
+  <Target Name="Clean">
+    <MSBuild Targets="Clean"
+             Projects="@(Solution)"
+             Properties="$(ProjectProperties)" />
+  </Target>
+
+  <Target Name="Build" DependsOnTargets="RestorePackages">
+    <MSBuild Targets="Build"
+             Projects="@(Solution)"
+             Properties="$(ProjectProperties)" />
+  </Target>
+
+  <Target Name="Rebuild" DependsOnTargets="RestorePackages">
+    <MSBuild Targets="Rebuild"
+             Projects="@(Solution)"
+             Properties="$(ProjectProperties)" />
+  </Target>
+
+</Project>
+<!--
+<Project ToolsVersion="4.0" DefaultTargets="PrintValues" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="PrintValues">
+    <Message Text="MSBuild: $(MSBuild)"/>
+    <Message Text="MSBuildBinPath: $(MSBuildBinPath)"/>
+    <Message Text="MSBuildExtensionsPath: $(MSBuildExtensionsPath)"/>
+    <Message Text="MSBuildExtensionsPath32: $(MSBuildExtensionsPath32)"/>
+    <Message Text="MSBuildExtensionsPath64: $(MSBuildExtensionsPath64)"/>
+    <Message Text="MSBuildLastTaskResult: $(MSBuildLastTaskResult)"/>
+    <Message Text="MSBuildNodeCount: $(MSBuildNodeCount)"/>
+    <Message Text="MSBuildOverrideTasksPath: $(MSBuildOverrideTasksPath)"/>
+    <Message Text="MSBuildProgramFiles32: $(MSBuildProgramFiles32)"/>
+    <Message Text="MSBuildProjectDefaultTargets: $(MSBuildProjectDefaultTargets)"/>
+    <Message Text="MSBuildProjectDirectory: $(MSBuildProjectDirectory)"/>
+    <Message Text="MSBuildProjectDirectoryNoRoot: $(MSBuildProjectDirectoryNoRoot)"/>
+    <Message Text="MSBuildProjectExtension: $(MSBuildProjectExtension)"/>
+    <Message Text="MSBuildProjectFile: $(MSBuildProjectFile)"/>
+    <Message Text="MSBuildProjectFullPath: $(MSBuildProjectFullPath)"/>
+    <Message Text="MSBuildProjectName: $(MSBuildProjectName)"/>
+    <Message Text="MSBuildStartupDirectory: $(MSBuildStartupDirectory)"/>
+    <Message Text="MSBuildThisFile: $(MSBuildThisFile)"/>
+    <Message Text="MSBuildThisFileDirectory: $(MSBuildThisFileDirectory)"/>
+    <Message Text="MSBuildThisFileDirectoryNoRoot: $(MSBuildThisFileDirectoryNoRoot)"/>
+    <Message Text="MSBuildThisFileExtension: $(MSBuildThisFileExtension)"/>
+    <Message Text="MSBuildThisFileFullPath: $(MSBuildThisFileFullPath)"/>
+    <Message Text="MSBuildThisFileName: $(MSBuildThisFileName)"/>
+    <Message Text="MSBuildToolsPath: $(MSBuildToolsPath)"/>
+    <Message Text="MSBuildToolsVersion: $(MSBuildToolsVersion)"/>
+  </Target>
+</Project>
+-->

@@ -1,0 +1,111 @@
+@import "Fonts.scss";
+//RESET
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: medium none;
+    font-family: $primaryFont;
+    font-size:$fontSize;
+    line-height: 100%;
+    outline: none;
+    /*@include box-sizing;*/
+}
+
+*:before, *:after {
+    @include box-sizing;
+}
+
+*:active:not(input, textarea), *:focus:not(input, textarea), *::-moz-focus-inner:not(input, textarea) {
+    outline: none;
+    border: medium none;
+}
+html, body {
+    height: 100%;
+}
+body {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+ul,
+ol {
+    list-style: none outside none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b, th {
+    font-family: $primaryFontBold;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 100%;
+    margin-bottom: 15px;
+}
+
+em, i, address, small {
+    font-family: $primaryFont;
+    font-style: normal;
+}
+
+.transition {
+    @include transition(all, .5s, ease, .5s);
+}
+
+.no-transition {
+    @include transition(all, 0s, ease, 0s);
+}
+
+.fix-clear {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+:active:not(input, textarea),
+:focus:not(input, textarea),
+::-moz-focus-inner:not(input, textarea) {
+    outline: none;
+    border: medium none;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+}
+
+::-moz-placeholder {
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+}
+
+:-ms-input-placeholder {
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+}
+
+input::-webkit-input-placeholder  {
+  -webkit-transition: opacity 0.3s linear; 
+}
+
+input:focus::-webkit-input-placeholder  {
+  @include opacity(0);
+}
