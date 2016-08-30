@@ -14,14 +14,14 @@
             $routeProvider.when(r.url, r.config);
         });
 
-        //$routeProvider.otherwise({ redirectTo: '/' });
+        $routeProvider.otherwise({ redirectTo: '/' });
     }
 
     // Define the routes 
     function getRoutes() {
         return [
             {
-                url: '/category',
+                url: '/',
                 config: {
                     title: 'Categorias',
                     templateUrl: 'app/category/manageCategories.html',
@@ -32,7 +32,7 @@
                 }
             },
             {
-                url: '/',
+                url: '/qqcoisa',
                 config: {
                     title: 'Lusa Rugby',
                     templateUrl: 'index.html',

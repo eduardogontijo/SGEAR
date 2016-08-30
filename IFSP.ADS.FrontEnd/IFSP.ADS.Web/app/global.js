@@ -1,3 +1,3 @@
 ﻿var global = {
-    api: "localhost:12345/v1/api/"
+    api: "http://localhost:12345/v1/api/"
 }
