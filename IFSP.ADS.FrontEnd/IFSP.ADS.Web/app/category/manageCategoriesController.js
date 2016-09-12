@@ -16,7 +16,6 @@
         }
 
         function get() {
-
             categoryService.get()
                 .then(function (result) {
                     vm.model = result.data;

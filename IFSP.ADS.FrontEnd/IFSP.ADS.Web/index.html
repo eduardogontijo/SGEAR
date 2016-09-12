@@ -1,17 +1,12 @@
 ﻿﻿<!DOCTYPE html>
-<html lang="en">
+<html  ng-app="app">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body ng-app="app">
-    <div class="wr-site" ng-class="pageClass">
-        <header-top></header-top>
-        <div data-ng-view>
-        </div>
-    </div>
 
+   
     <!--Libs-->
     <script src="scripts/lib/jquery/dist/jquery.min.js"></script>
     <script src="scripts/lib/angular/angular.min.js"></script>
@@ -32,5 +27,8 @@
     <!--Controllers-->
     <script src="app/category/manageCategoriesController.js"></script>
     <!--Controllers-->
+MENU
+<body>
+    <ng-view></ng-view>
 </body>
 </html>
