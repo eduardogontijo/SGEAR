@@ -1,6 +1,7 @@
 ﻿(function () {
     'use strict';
-    angular.module("app").config(function ($routeProvider) {
+    angular.module("app")
+        .config(function ($routeProvider) {
 
         $routeProvider.when("/categoria", {
             templateUrl: "app/category/manageCategories.html",

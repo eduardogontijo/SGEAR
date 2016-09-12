@@ -83,11 +83,9 @@
     <Content Include="app\category\manageCategoriesController.js" />
     <Content Include="app\common\common.js" />
     <Content Include="app\global.js" />
-    <Content Include="app\index.html" />
     <Content Include="app\login\login.html" />
     <Content Include="app\login\loginController.js" />
     <Content Include="app\services\categoryService.js" />
-    <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="scripts\lib\angular-route\angular-route.js" />
     <Content Include="scripts\lib\angular-route\angular-route.min.js" />
@@ -201,17 +199,11 @@
     <Content Include="scripts\lib\jquery\src\wrap.js" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\athlete\" />
     <Folder Include="app\directives\" />
-    <Folder Include="app\views\" />
-    <Folder Include="App_Data\" />
     <Folder Include="content\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
@@ -240,7 +232,6 @@
     <Content Include="scripts\lib\jquery\external\sizzle\dist\sizzle.min.map" />
     <Content Include="scripts\lib\jquery\README.md" />
     <Content Include="scripts\lib\jquery\src\.jshintrc" />
-    <Content Include="packages.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
