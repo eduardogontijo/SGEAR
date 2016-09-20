@@ -17,6 +17,7 @@ namespace IFSP.ADS.API.Startup
             ServiceLocator.SetInstance(new StructureMapServiceLocator(container));
 
             ConfigureDependency<ICategoryService>(container, () => new CategoryService());
+            ConfigureDependency<IModalityService>(container, () => new ModalityService());
 
             config.Services.Replace(typeof(IHttpControllerActivator), new StructureMapHttpControllerActivator(container));
 
