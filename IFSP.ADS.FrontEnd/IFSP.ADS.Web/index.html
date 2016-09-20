@@ -1,34 +1,55 @@
 ﻿﻿<!DOCTYPE html>
-<html  ng-app="app">
+<html ng-app="app">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 
-   
+    <link href="content/css/bootstrap.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="content/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+
+    <link href="content/css/custom.css" rel="stylesheet">
+    <link href="content/css/green.css" rel="stylesheet">
+    <link href="content/css/jqvmap.css" rel="stylesheet">
+    <link href="content/css/nprogress.css" rel="stylesheet">
+
+
+
+
     <!--Libs-->
     <script src="scripts/lib/jquery/dist/jquery.min.js"></script>
     <script src="scripts/lib/angular/angular.min.js"></script>
     <script src="scripts/lib/angular-route/angular-route.min.js"></script>
     <!--Libs-->
-
     <!--Config-->
     <script src="app/app.js"></script>
     <script src="app/app.routes.js"></script>
     <script src="app/global.js"></script>
     <script src="app/common/common.js"></script>
     <!--Config-->
-
     <!--Services-->
     <script src="app/services/categoryService.js"></script>
-    <!--Services-->  
-
+    <!--Services-->
     <!--Controllers-->
     <script src="app/category/manageCategoriesController.js"></script>
     <!--Controllers-->
-MENU
-<body>
-    <ng-view></ng-view>
+
+
+
+    <script src="content/js/bootstrap-progressbar.min.js"></script>
+    <script src="content/js/bootstrap.min.js"></script>
+
+
+   
+</head>
+<body class="nav-md">
+    <div class="container body">
+        <div ng-include="'app/components/menu/menu.html'"></div>
+        <div class="right_col" role="main">
+            <ng-view>
+            </ng-view>
+        </div>
+    </div>
 </body>
 </html>

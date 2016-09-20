@@ -9,8 +9,15 @@
         });
 
         $routeProvider.when("/login", {
-            templateUrl: "app/login/login.html",
-            controller: "loginController"
+            templateUrl: "app/login/login.html"
+        });
+
+        $routeProvider.when("/athlete", {
+            templateUrl: "app/athlete/athlete.html"
+        });
+
+        $routeProvider.when("/home", {
+            templateUrl: "app/home/home.html"
         });
 
         $routeProvider.otherwise({ templateUrl: "/" });

@@ -1,15 +1,15 @@
-﻿(function () {
+﻿//(function () {
 
-    'use strict';
+//    'use strict';
 
-    angular.module('app').controller('loginController', loginController);
+//    angular.module('app').controller('loginController', loginController);
 
-    loginController.$inject = ['$rootScope', 'categoryService'];
+//    loginController.$inject = ['$rootScope', 'categoryService'];
 
-    function loginController($rootScope, categoryService) {
-        var vm = this;
+//    //function loginController($rootScope, categoryService) {
+//    //    var vm = this;
 
 
-    };
+//    //};
 
-})();
+//})();
