@@ -1,0 +1,4 @@
+D:\sgear\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.dll
+D:\sgear\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.pdb
+D:\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.dll
+D:\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.pdb

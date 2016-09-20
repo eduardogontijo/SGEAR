@@ -1,0 +1,9 @@
+D:\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Services.dll
+D:\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Services.pdb
+D:\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Infrastructure.dll
+D:\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.dll
+D:\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Infrastructure.pdb
+D:\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.pdb
+D:\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.csprojResolveAssemblyReference.cache
+D:\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.dll
+D:\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.pdb

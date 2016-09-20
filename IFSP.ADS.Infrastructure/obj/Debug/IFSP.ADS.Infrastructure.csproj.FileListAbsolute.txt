@@ -1,0 +1,12 @@
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Infrastructure.dll.config
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Infrastructure.dll
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Infrastructure.pdb
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.dll
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Models.dll
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Models.pdb
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.xml
+D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+D:\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.csprojResolveAssemblyReference.cache
+D:\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.dll
+D:\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.pdb
