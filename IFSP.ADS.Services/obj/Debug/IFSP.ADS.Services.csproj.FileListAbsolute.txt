@@ -1,0 +1,9 @@
+C:\Git\IFSP\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Services.dll
+C:\Git\IFSP\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Services.pdb
+C:\Git\IFSP\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Infrastructure.dll
+C:\Git\IFSP\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.dll
+C:\Git\IFSP\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Infrastructure.pdb
+C:\Git\IFSP\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.pdb
+C:\Git\IFSP\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.csprojResolveAssemblyReference.cache
+C:\Git\IFSP\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.dll
+C:\Git\IFSP\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.pdb

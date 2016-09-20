@@ -205,7 +205,6 @@
     <Folder Include="app\athlete\" />
     <Folder Include="app\directives\" />
     <Folder Include="content\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="web.config">

@@ -1,0 +1,5 @@
+C:\Git\IFSP\sgear\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.dll
+C:\Git\IFSP\sgear\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.pdb
+C:\Git\IFSP\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.csprojResolveAssemblyReference.cache
+C:\Git\IFSP\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.dll
+C:\Git\IFSP\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.pdb
