@@ -83,6 +83,8 @@
     <Content Include="app\category\manageCategoriesController.js" />
     <Content Include="app\common\common.js" />
     <Content Include="app\global.js" />
+    <Content Include="app\home\home.html" />
+    <Content Include="app\home\homeController.js" />
     <Content Include="app\login\login.html" />
     <Content Include="app\login\loginController.js" />
     <Content Include="app\services\categoryService.js" />
@@ -115,6 +117,7 @@
     <Content Include="content\js\curvedLines.js" />
     <Content Include="content\js\custom.js" />
     <Content Include="content\js\custom.min.js" />
+    <Content Include="content\js\dataTables.responsive.js" />
     <Content Include="content\js\date.js" />
     <Content Include="content\js\daterangepicker.js" />
     <Content Include="content\js\estrutura.js" />
@@ -122,6 +125,7 @@
     <Content Include="content\js\gauge.min.js" />
     <Content Include="content\js\icheck.min.js" />
     <Content Include="content\js\jquery-3.1.0.min.js" />
+    <Content Include="content\js\jquery.dataTables.js" />
     <Content Include="content\js\jquery.flot.js" />
     <Content Include="content\js\jquery.flot.orderBars.js" />
     <Content Include="content\js\jquery.flot.pie.js" />

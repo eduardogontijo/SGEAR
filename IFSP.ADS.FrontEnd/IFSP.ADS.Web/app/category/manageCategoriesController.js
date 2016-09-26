@@ -18,8 +18,7 @@
         function get() {
             categoryService.get()
                 .then(function (result) {
-                    vm.model = result.data;
-                    console.log(vm.model);
+                    vm.categories = result.data;
                 })
                 .catch(function () {
                     console.log("Erro ao consultar categorias");

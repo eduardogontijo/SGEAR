@@ -20,7 +20,20 @@
             templateUrl: "app/home/home.html"
         });
 
-        $routeProvider.otherwise({ templateUrl: "/" });
+        //$stateProvider.state('sgear.view_category', {
+        //    url: "/categoria/:id",
+        //    data: {
+        //        pageTitle: 'Editar Categoria',
+        //    },
+        //    views: {
+        //        'main': {
+        //            templateUrl: "app/category/editManageCategories.html",
+        //            controller: 'editManageCategoriesController'
+        //        }
+        //    }
+        //});
+
+        $routeProvider.otherwise({ templateUrl: "/login" });
     });
 
 })();
