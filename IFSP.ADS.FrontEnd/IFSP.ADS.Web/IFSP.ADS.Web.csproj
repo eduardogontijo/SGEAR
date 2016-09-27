@@ -79,7 +79,9 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\app.routes.js" />
+    <Content Include="app\category\editCategories.html" />
     <Content Include="app\category\manageCategories.html" />
+    <Content Include="app\category\editCategoriesController.js" />
     <Content Include="app\category\manageCategoriesController.js" />
     <Content Include="app\common\common.js" />
     <Content Include="app\global.js" />

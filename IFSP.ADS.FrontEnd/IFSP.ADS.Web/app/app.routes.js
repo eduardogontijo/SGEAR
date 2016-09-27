@@ -4,8 +4,10 @@
         .config(function ($routeProvider) {
 
         $routeProvider.when("/categoria", {
-            templateUrl: "app/category/manageCategories.html",
-            controller: "manageCategoriesController",
+            templateUrl: "app/category/manageCategories.html"
+        })
+          .when("/categoria/:id", {
+            templateUrl: "app/category/editCategories.html"
         });
 
         $routeProvider.when("/login", {
