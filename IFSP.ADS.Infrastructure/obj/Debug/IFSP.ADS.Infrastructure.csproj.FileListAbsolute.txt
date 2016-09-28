@@ -10,3 +10,15 @@ D:\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
 D:\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.csprojResolveAssemblyReference.cache
 D:\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.dll
 D:\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Infrastructure.dll.config
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Infrastructure.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Infrastructure.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Models.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\IFSP.ADS.Models.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Infrastructure\obj\Debug\IFSP.ADS.Infrastructure.pdb

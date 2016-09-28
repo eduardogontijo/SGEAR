@@ -7,3 +7,12 @@ D:\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.pdb
 D:\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.csprojResolveAssemblyReference.cache
 D:\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.dll
 D:\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Services.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Services.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Infrastructure.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Infrastructure.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.csprojResolveAssemblyReference.cache
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.pdb

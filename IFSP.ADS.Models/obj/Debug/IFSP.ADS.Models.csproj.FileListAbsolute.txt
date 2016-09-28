@@ -2,3 +2,8 @@ D:\sgear\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.dll
 D:\sgear\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.pdb
 D:\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.dll
 D:\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.csprojResolveAssemblyReference.cache
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.pdb

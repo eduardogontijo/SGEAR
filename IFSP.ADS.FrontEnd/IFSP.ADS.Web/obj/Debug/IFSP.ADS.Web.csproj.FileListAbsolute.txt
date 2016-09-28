@@ -8,3 +8,15 @@ D:\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\System.Web.Http.xml
 D:\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.csprojResolveAssemblyReference.cache
 D:\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.dll
 D:\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\IFSP.ADS.Web.dll.config
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\IFSP.ADS.Web.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\IFSP.ADS.Web.pdb
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\Newtonsoft.Json.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\System.Web.Http.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\System.Web.Http.xml
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.csprojResolveAssemblyReference.cache
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.dll
+C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.pdb
