@@ -4,7 +4,6 @@ using System.Web.Http.Dispatcher;
 using StructureMap;
 using IFSP.ADS.Services.Contracts;
 using IFSP.ADS.Services.Services;
-using StructureMap.Pipeline;
 
 namespace IFSP.ADS.API.Startup
 {
@@ -17,6 +16,8 @@ namespace IFSP.ADS.API.Startup
             ServiceLocator.SetInstance(new StructureMapServiceLocator(container));
 
             ConfigureDependency<ICategoryService>(container, () => new CategoryService());
+            ConfigureDependency<IFederationService>(container, () => new FederationService());
+            ConfigureDependency<IModalityService>(container, () => new ModalityService());
 
             config.Services.Replace(typeof(IHttpControllerActivator), new StructureMapHttpControllerActivator(container));
 
