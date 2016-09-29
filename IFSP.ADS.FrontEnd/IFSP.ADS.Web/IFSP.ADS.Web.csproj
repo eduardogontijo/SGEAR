@@ -101,7 +101,6 @@
     <Content Include="content\css\nprogress.css" />
     <Content Include="content\img\american-express.png" />
     <Content Include="content\img\cropper.jpg" />
-    <Content Include="content\img\img.jpg" />
     <Content Include="content\img\inbox.png" />
     <Content Include="content\img\mastercard.png" />
     <Content Include="content\img\media.jpg" />
