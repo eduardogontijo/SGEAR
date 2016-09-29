@@ -41,6 +41,8 @@ namespace IFSP.ADS.API.Controllers
         {
             var model = _CategoryService.Delete(categoryID);
 
+            if (!model.HasError)
+                return Ok();
             return BadRequest(model.Errors.FirstOrDefault().Message);
         }
 
@@ -49,6 +51,9 @@ namespace IFSP.ADS.API.Controllers
         {
             var model = _CategoryService.Update(category);
 
+            if (!model.HasError)
+                return Ok();
+
             return BadRequest(model.Errors.FirstOrDefault().Message);
         }
 
@@ -56,6 +61,9 @@ namespace IFSP.ADS.API.Controllers
         public IHttpActionResult Create(Category category)
         {
             var model = _CategoryService.Create(category);
+
+            if (!model.HasError)
+                return Ok();
 
             return BadRequest(model.Errors.FirstOrDefault().Message);
         }

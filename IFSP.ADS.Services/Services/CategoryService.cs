@@ -4,6 +4,8 @@ using IFSP.ADS.Infrastructure;
 using IFSP.ADS.Models;
 using IFSP.ADS.Services.Contracts;
 using System.Linq;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
 
 namespace IFSP.ADS.Services.Services
 {
@@ -95,6 +97,8 @@ namespace IFSP.ADS.Services.Services
                 {
                     var categoryDB = ctx.Category.Single(x=> x.Id == category.Id);
                     categoryDB = category;
+
+                    ctx.Set<Category>().AddOrUpdate(categoryDB);
 
                     var result = ctx.SaveChanges();
 

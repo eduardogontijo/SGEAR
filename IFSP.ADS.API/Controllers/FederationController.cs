@@ -6,7 +6,7 @@ using System.Web.Http;
 namespace IFSP.ADS.API.Controllers
 {
 
-    [RoutePrefix("v1/api/")]
+    [RoutePrefix("v1/api/federation")]
     public class FederationController : ApiControllerBase
     {
         private readonly IFederationService _service;
