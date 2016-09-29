@@ -13,7 +13,7 @@
                                 Nome <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="both name(s) e.g Jon Doe" required="required" type="text">
+                                <input id="name" ng-model="vm.category.name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="both name(s) e.g Jon Doe" required="required" type="text">
                             </div>
                         </div>
 
@@ -22,7 +22,7 @@
                                 Tipo <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                                <input type="text" ng-model="vm.category.type" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
                             </div>
                         </div>
                         <div class="item form-group">
@@ -31,7 +31,7 @@
                             </label>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" class="flat" checked="checked">
+                                    <input type="checkbox" ng-model="vm.category.status" class="flat">
                                 </label>
                             </div>
                         </div>
@@ -40,10 +40,10 @@
                                 Sexo <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <select class="select2_multiple form-control">
+                                <select class="select2_multiple form-control" ng-model="vm.category.gender">
                                     <option></option>
-                                    <option>Feminino</option>
-                                    <option>Masculino</option>
+                                    <option value="Feminino">Feminino</option>
+                                    <option value="Masculino">Masculino</option>
                                 </select>
                             </div>
                         </div>
@@ -52,13 +52,13 @@
                                 Descrição <span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <textarea id="textarea" required="required" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+                                <textarea id="textarea" ng-model="vm.category.description" required="required" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
                             </div>
                         </div>
                         <div class="ln_solid"></div>
                         <div class="form-group">
                             <div class="col-md-9">
-                                <button id="send" type="submit" class="btn btn-success pull-right">Enviar</button>
+                                <button id="send" ng-click="vm.save();" type="submit" class="btn btn-success pull-right">Salvar</button>
                                 <button type="submit" class="btn btn-danger pull-right">Cancelar</button>
                             </div>
                         </div>

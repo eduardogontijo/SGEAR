@@ -8,7 +8,10 @@
         })
           .when("/categoria/:id", {
             templateUrl: "app/category/editCategories.html"
-        });
+        })
+          .when("/newcategory", {
+              templateUrl: "app/category/editCategories.html"
+          });
 
         $routeProvider.when("/login", {
             templateUrl: "app/login/login.html"

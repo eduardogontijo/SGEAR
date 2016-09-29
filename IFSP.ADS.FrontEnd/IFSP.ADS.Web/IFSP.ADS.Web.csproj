@@ -84,6 +84,7 @@
     <Content Include="app\category\editCategoriesController.js" />
     <Content Include="app\category\manageCategoriesController.js" />
     <Content Include="app\common\common.js" />
+    <Content Include="app\components\menu\menu.html" />
     <Content Include="app\global.js" />
     <Content Include="app\home\home.html" />
     <Content Include="app\home\homeController.js" />
