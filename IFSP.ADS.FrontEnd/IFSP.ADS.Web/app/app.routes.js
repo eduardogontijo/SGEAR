@@ -20,6 +20,10 @@
         $routeProvider.when("/athlete", {
             templateUrl: "app/athlete/athlete.html"
         });
+        $routeProvider.when("/athlete", {
+            templateUrl: "app/athlete/editAthlete.html"
+        });
+
 
         $routeProvider.when("/home", {
             templateUrl: "app/home/home.html"
