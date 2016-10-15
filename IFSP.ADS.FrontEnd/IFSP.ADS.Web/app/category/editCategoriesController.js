@@ -56,6 +56,10 @@
             }
         };
 
+        vm.cancel = function () {
+            $location.path("/categoria");
+        };
+
 
     };
 
