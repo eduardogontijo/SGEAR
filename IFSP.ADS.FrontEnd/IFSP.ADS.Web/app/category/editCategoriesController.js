@@ -4,9 +4,9 @@
 
     angular.module('app').controller('editCategoriesController', editCategoriesController);
 
-    editCategoriesController.$inject = ['$rootScope', 'categoryService', '$routeParams', '$location'];
+    editCategoriesController.$inject = ['$rootScope', 'categoryService', '$routeParams', '$location', 'toastr'];
 
-    function editCategoriesController($rootScope, categoryService, $routeParams, $location) {
+    function editCategoriesController($rootScope, categoryService, $routeParams, $location, toastr) {
         var vm = this;
         vm.category = {};
 
@@ -25,7 +25,7 @@
                     vm.category = result.data;
                 })
                 .catch(function () {
-                    console.log("Erro ao consultar categoria");
+                    toastr.error('Não foi possível carregar categoria', 'Erro');
                 });
         }
 
@@ -39,7 +39,7 @@
                      }
                  })
                  .catch(function () {
-                     console.log("Erro ao cadastrar categoria");
+                     toastr.error('Não foi possível cadastrar categoria', 'Erro');
                  });
             }
 
@@ -47,11 +47,12 @@
                 categoryService.edit(vm.category)
                   .then(function (result) {
                       if (result.status = 200) {
-                          alert("Dados atualizados!");
+                          //alert("Dados atualizados!");
+                          toastr.success('Dados atualizados!', 'Sucesso!');
                       }
                   })
                   .catch(function () {
-                      console.log("Erro ao editar categorias");
+                      toastr.error('Não foi possível editar categoria', 'Erro');
                   });
             }
         };
