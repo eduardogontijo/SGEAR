@@ -30,7 +30,7 @@ namespace IFSP.ADS.API.Controllers
         {
             var model = _CategoryService.List();
 
-            if (model != null && model.Count > 0)
+            if (model != null)
                 return Ok(model);
 
             return NotFound();
