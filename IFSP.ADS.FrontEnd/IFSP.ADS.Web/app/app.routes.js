@@ -9,9 +9,20 @@
           .when("/categoria/:id", {
             templateUrl: "app/category/editCategories.html"
         })
-          .when("/newcategory", {
+          .when("/novacategoria", {
               templateUrl: "app/category/editCategories.html"
           });
+
+
+        $routeProvider.when("/modalidade", {
+            templateUrl: "app/modality/listModality.html"
+        })
+         .when("/modalidade/:id", {
+             templateUrl: "app/modality/editModality.html"
+         })
+         .when("/novamodalidade", {
+             templateUrl: "app/modality/editModality.html"
+         });
 
         $routeProvider.when("/login", {
             templateUrl: "app/login/login.html"

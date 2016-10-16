@@ -68,7 +68,7 @@
                         <div class="form-group">
                             <div class="col-md-9">
                                 <button type="submit" ng-click="vm.cancel();" class="btn btn-danger pull-right">Cancelar</button>
-                                <button id="send" ng-click="vm.save();" type="submit" class="btn btn-success pull-right">Salvar</button>
+                                <button id="send" ng-disabled="!vm.category.name || !vm.category.responsible || !vm.category.type || !vm.category.status || !vm.category.gender || !vm.category.description" ng-click="vm.save();" type="submit" class="btn btn-success pull-right">Salvar</button>
                             </div>
                         </div>
                     </form>

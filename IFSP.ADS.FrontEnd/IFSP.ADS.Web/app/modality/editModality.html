@@ -1,0 +1,53 @@
+﻿<div ng-controller="editModalityController as vm">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Editar Modalidade</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left" novalidate>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                Tipo <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="name" ng-model="vm.modality.competitionType" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="both name(s) e.g Jon Doe" required="required" type="text">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Idade <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.modality.age" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">
+                                Sexo <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="select2_multiple form-control" ng-model="vm.modality.gender">
+                                    <option></option>
+                                    <option value="Feminino">Feminino</option>
+                                    <option value="Masculino">Masculino</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-9">
+                                <button type="submit" ng-click="vm.cancel();" class="btn btn-danger pull-right">Cancelar</button>
+                                <button id="send"  ng-disabled="!vm.modality.competitionType || !vm.modality.age || !vm.modality.gender" ng-click="vm.save();" type="submit" class="btn btn-success pull-right">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="content/js/custom.min.js"></script>
+            <script src="content/js/estrutura.js"></script>

@@ -31,6 +31,10 @@
 
     
         vm.save = function () {
+            if (!vm.category.name || !vm.category.responsible || !vm.category.type || !vm.category.status || !vm.category.gender || !vm.category.description) {
+                return;
+            }
+
             if (vm.categoryId == 0) {
                 categoryService.create(vm.category)
                  .then(function (result) {

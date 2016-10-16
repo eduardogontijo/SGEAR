@@ -30,6 +30,10 @@
             $location.path("/categoria/"+category.id);
         };
 
+        vm.addCategory = function () {
+            $location.path("/novacategoria");
+        }
+
         vm.deleteCategory = function (category) {
             categoryService.deleteCategory(category.id)
                 .then(function (result) {
