@@ -10,6 +10,7 @@ namespace IFSP.ADS.Services.Contracts
         ResponseBase Update(Modality model);
         List<Modality> List();
         Modality Get(int modalityID);
+        ResponseBase Delete(int modalityID);
     }
 
 }

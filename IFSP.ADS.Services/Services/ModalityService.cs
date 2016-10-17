@@ -50,7 +50,7 @@ namespace IFSP.ADS.Services.Services
         {
             var ctx = new LusaContext();
 
-            return ctx.Modality.ToList();
+            return ctx.Modality.Where(x => x.Status).ToList();
         }
 
         public ResponseBase Update(Modality model)
@@ -80,6 +80,36 @@ namespace IFSP.ADS.Services.Services
             }
 
             return response;
+        }
+
+        public ResponseBase Delete(int modalityID)
+        {
+            var response = new ResponseBase();
+
+            using (var ctx = new LusaContext())
+            {
+
+                try
+                {
+                    var modality = ctx.Modality.First(x => x.Id == modalityID);
+
+                    modality.Delete();
+
+                    var result = ctx.SaveChanges();
+
+                    if (result > 0)
+                        return response;
+
+                    response.Errors.Add(new Error { Code = 1, Description = "Não foi possível remover a modalidade." });
+                    return response;
+                }
+                catch (Exception ex)
+                {
+                    response.Errors.Add(new Error { Code = 1, Message = ex.Message, Description = "Não foi possível remover a modalidade." });
+                    throw;
+                }
+            }
+
         }
     }
 

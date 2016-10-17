@@ -15,7 +15,7 @@ namespace IFSP.ADS.API.Controllers
             _service = service;
         }
 
-        [HttpGet, Route("")]
+        [HttpGet, Route]
         public IHttpActionResult Get([FromUri]int modalityID)
         {
             var result = _service.Get(modalityID);
@@ -26,7 +26,7 @@ namespace IFSP.ADS.API.Controllers
             return NotFound();
         }
 
-        [HttpPost, Route("")]
+        [HttpPost, Route]
         public IHttpActionResult Create([FromBody]Modality model)
         {
             ResponseBase response = _service.Create(model);
@@ -36,7 +36,17 @@ namespace IFSP.ADS.API.Controllers
             return Ok();
         }
 
-        [HttpPut, Route("")]
+        [HttpDelete, Route]
+        public IHttpActionResult Delete(int modalityID)
+        {
+            var model = _service.Delete(modalityID);
+
+            if (!model.HasError)
+                return Ok();
+            return BadRequest(model.Errors[0].Description);
+        }
+
+        [HttpPut, Route]
         public IHttpActionResult Update([FromBody]Modality model)
         {
             ResponseBase response = _service.Update(model);
@@ -46,7 +56,7 @@ namespace IFSP.ADS.API.Controllers
             return Ok();
         }
 
-        [HttpGet, Route("")]
+        [HttpGet, Route]
         public IHttpActionResult Get()
         {
             var result = _service.List();

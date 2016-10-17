@@ -13,5 +13,12 @@ namespace IFSP.ADS.Models
         public string Gender { get; set; }
         public string Age { get; set; }
         public string CompetitionType { get; set; }
+
+        public bool Status { get; set; } = true;
+
+        public void Delete()
+        {
+            this.Status = false;
+        }
     }
 }
