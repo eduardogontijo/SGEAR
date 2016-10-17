@@ -11,6 +11,7 @@
         vm.modality = {};
 
         vm.modalityId = $routeParams.id || 0;
+        vm.modalityEdit = $routeParams.id;
 
         activate();
 

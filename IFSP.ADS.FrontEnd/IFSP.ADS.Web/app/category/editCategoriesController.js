@@ -11,6 +11,7 @@
         vm.category = {};
 
         vm.categoryId = $routeParams.id || 0;
+        vm.categoryEdit = $routeParams.id;
 
         activate();
 
