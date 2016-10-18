@@ -22,7 +22,6 @@ namespace IFSP.ADS.Infrastructure
         public DbSet<Category> Category { get; set; }
         public DbSet<Contact> Contact { get; set; }
         public DbSet<Federation> Federation { get; set; }
-        public DbSet<FederationType> FederationType { get; set; }
         public DbSet<Field> Field { get; set; }
         public DbSet<File> File { get; set; }
         public DbSet<Foundation> Foundation { get; set; }

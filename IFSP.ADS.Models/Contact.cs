@@ -16,7 +16,7 @@ namespace IFSP.ADS.Models
         public string Email { get; set; }
         public string Description { get; set; }
 
-        public bool Status { get; set; }
+        public bool Status { get; set; } = true;
 
         public void Delete()
         {
