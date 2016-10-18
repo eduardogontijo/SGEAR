@@ -23,6 +23,34 @@
                  templateUrl: "app/modality/editModality.html"
              });
 
+
+            $routeProvider.when("/contato", {
+                templateUrl: "app/contact/listcontact.html"
+            })
+             .when("/contato/:id", {
+                 templateUrl: "app/contact/editContact.html"
+             })
+             .when("/novocontato", {
+                 templateUrl: "app/contact/editContact.html"
+             });
+
+            $routeProvider.when("/login", {
+                templateUrl: "app/login/login.html"
+            });
+
+
+
+            $routeProvider.when("/federacao", {
+                templateUrl: "app/federation/listFederation.html"
+            })
+             .when("/federacao/:id", {
+                 templateUrl: "app/federation/editFederation.html"
+             })
+            .when("/novafederacao", {
+                templateUrl: "app/federation/editFederation.html"
+            });
+
+
             $routeProvider.when("/login", {
                 templateUrl: "app/login/login.html"
             });

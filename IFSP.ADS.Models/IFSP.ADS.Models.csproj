@@ -46,7 +46,6 @@
     <Compile Include="Category.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="Federation.cs" />
-    <Compile Include="FederationType.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="File.cs" />
     <Compile Include="Foundation.cs" />
