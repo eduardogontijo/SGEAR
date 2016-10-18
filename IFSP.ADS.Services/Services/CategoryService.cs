@@ -96,9 +96,9 @@ namespace IFSP.ADS.Services.Services
                 using (var ctx = new LusaContext())
                 {
                     var categoryDB = ctx.Category.Single(x=> x.Id == category.Id);
-                    categoryDB = category;
 
-                    ctx.Set<Category>().AddOrUpdate(categoryDB);
+                    categoryDB.Update(category);
+                    ctx.Entry(categoryDB).State = EntityState.Modified;
 
                     var result = ctx.SaveChanges();
 

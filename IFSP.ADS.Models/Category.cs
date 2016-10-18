@@ -20,5 +20,16 @@ namespace IFSP.ADS.Models
         {
             this.Status = false;
         }
+
+        public void Update(Category category)
+        {
+            this.Name = category.Name;
+            this.Responsible = category.Responsible;
+            this.Type = category.Type;
+            this.Status = category.Status;
+            this.Gender = category.Gender;
+        }
+
+
     }
 }

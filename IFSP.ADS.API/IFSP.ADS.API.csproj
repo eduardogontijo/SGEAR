@@ -154,6 +154,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\FederationController.cs" />
     <Compile Include="Controllers\ModalityController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
     <Compile Include="ServiceLocator.cs" />
     <Compile Include="Controllers\ApiControllerBase.cs" />
     <Compile Include="Middlewares\RequestIdMiddleware.cs" />

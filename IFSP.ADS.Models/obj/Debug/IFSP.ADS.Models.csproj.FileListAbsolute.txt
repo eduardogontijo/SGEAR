@@ -7,3 +7,8 @@ C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\bin\Debug\IFSP.A
 C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.csprojResolveAssemblyReference.cache
 C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.dll
 C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.pdb
+C:\Git\IFSP\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.dll
+C:\Git\IFSP\IFSP.ADS.Models\bin\Debug\IFSP.ADS.Models.pdb
+C:\Git\IFSP\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.dll
+C:\Git\IFSP\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.pdb
+C:\Git\IFSP\IFSP.ADS.Models\obj\Debug\IFSP.ADS.Models.csprojResolveAssemblyReference.cache

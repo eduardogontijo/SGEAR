@@ -16,3 +16,12 @@ C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\bin\Debug\IFSP
 C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.csprojResolveAssemblyReference.cache
 C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.dll
 C:\Users\eduardo.pereira\Desktop\IFSP\TCC\sgear\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.pdb
+C:\Git\IFSP\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Services.dll
+C:\Git\IFSP\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Services.pdb
+C:\Git\IFSP\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Infrastructure.dll
+C:\Git\IFSP\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.dll
+C:\Git\IFSP\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Infrastructure.pdb
+C:\Git\IFSP\IFSP.ADS.Services\bin\Debug\IFSP.ADS.Models.pdb
+C:\Git\IFSP\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.csprojResolveAssemblyReference.cache
+C:\Git\IFSP\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.dll
+C:\Git\IFSP\IFSP.ADS.Services\obj\Debug\IFSP.ADS.Services.pdb
