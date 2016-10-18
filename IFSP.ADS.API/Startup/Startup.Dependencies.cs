@@ -18,6 +18,7 @@ namespace IFSP.ADS.API.Startup
             ConfigureDependency<ICategoryService>(container, () => new CategoryService());
             ConfigureDependency<IFederationService>(container, () => new FederationService());
             ConfigureDependency<IModalityService>(container, () => new ModalityService());
+            ConfigureDependency<IContactService>(container, () => new ContactService());
 
             config.Services.Replace(typeof(IHttpControllerActivator), new StructureMapHttpControllerActivator(container));
 

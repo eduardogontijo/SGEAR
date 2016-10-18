@@ -14,6 +14,14 @@ namespace IFSP.ADS.Models
         public string CellPhone { get; set; }
         public string AdditionalPhone { get; set; }
         public string Email { get; set; }
+        public bool Status { get; set; } = true;
         public string Description { get; set; }
+
+        public void Delete()
+        {
+            this.Status = false;
+        }
+
+
     }
 }

@@ -85,6 +85,10 @@
     <Content Include="app\category\manageCategoriesController.js" />
     <Content Include="app\common\common.js" />
     <Content Include="app\components\menu\menu.html" />
+    <Content Include="app\Contact\editContact.html" />
+    <Content Include="app\Contact\editContactController.js" />
+    <Content Include="app\Contact\listContact.html" />
+    <Content Include="app\Contact\listContactController.js" />
     <Content Include="app\global.js" />
     <Content Include="app\home\home.html" />
     <Content Include="app\home\homeController.js" />
@@ -95,6 +99,7 @@
     <Content Include="app\modality\listModality.html" />
     <Content Include="app\modality\listModalityController.js" />
     <Content Include="app\services\categoryService.js" />
+    <Content Include="app\services\contactService.js" />
     <Content Include="app\services\modalityService.js" />
     <Content Include="content\css\angular-toastr.min.css" />
     <Content Include="content\css\bootstrap-progressbar-3.3.4.min.css" />
@@ -268,6 +273,7 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="scripts\lib\ngMask\ngMask.min.js" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>

@@ -3,6 +3,7 @@
 
     angular.module('app', [
         'ngRoute',
-        'toastr'
+        'toastr',
+        'ui.mask'
     ]);
 })();
