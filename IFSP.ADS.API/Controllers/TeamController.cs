@@ -9,7 +9,7 @@ using System.Web.Http;
 
 namespace IFSP.ADS.API.Controllers
 {
-    [RoutePrefix("api/v1/team")]
+    [RoutePrefix("v1/api/team")]
     public class TeamController:ApiControllerBase
     {
         private readonly ITeamService _service;

@@ -30,3 +30,4 @@ C:\Git\IFSP\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\System.Net.Http.Formatting.xml
 C:\Git\IFSP\IFSP.ADS.FrontEnd\IFSP.ADS.Web\bin\System.Web.Http.xml
 C:\Git\IFSP\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.dll
 C:\Git\IFSP\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.pdb
+C:\Git\IFSP\IFSP.ADS.FrontEnd\IFSP.ADS.Web\obj\Debug\IFSP.ADS.Web.csprojResolveAssemblyReference.cache

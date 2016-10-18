@@ -1,0 +1,36 @@
+﻿<div ng-controller="listTeamsController as vm">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>{{name}}</h2>
+                <button class="btn btn-link pull-right" ng-click="vm.addCategory()">+ Adicionar Time</button>
+                <div class="clearfix"></div>
+            </div>
+            <div ng-if="vm.model.length == 0" class="col-md-12 col-sm-12 col-xs-12">
+                <h1>Você não possui times cadastrados!</h1>
+            </div>
+            <div ng-if="vm.model.length > 0" class="x_content">
+                <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Modalidades</th>
+                            <th class="col-md-1"></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="item in vm.model">
+                        <tr>
+                            <td>{{item.name}}</td>
+                            <td>{{item}}</td>
+                            <td><button class="btn btn-default" ng-click="vm.edit(item);"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+                            <td><button class="btn btn-default" ng-click="vm.delete(item);"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="content/js/custom.min.js"></script>
+    <script src="content/js/estrutura.js"></script>
+</div>

@@ -13,7 +13,8 @@ namespace IFSP.ADS.Infrastructure.Migrations
         protected override void Seed(LusaContext ctx)
         {
 
-            Categories(ctx);
+            //Categories(ctx);
+            Teams(ctx);
             ctx.SaveChanges();
         }
 
@@ -36,6 +37,17 @@ namespace IFSP.ADS.Infrastructure.Migrations
                 Status = true
             }
             );
+        }
+
+        public void Teams(LusaContext ctx)
+        {
+            ctx.Team.AddOrUpdate(x => x.Id, new Models.Team
+            {
+                Id = 1,
+                FullName = "Spac",
+                Name = "Spac",
+
+            });
         }
     }
 }
