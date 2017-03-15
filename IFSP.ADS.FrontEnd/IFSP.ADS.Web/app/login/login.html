@@ -1,8 +1,32 @@
-﻿<div>
-
-    login
-
-
+﻿<div id="login-page" ng-controller="loginController as vm">
+    <div id="content-box">
+        <div class="row">
+            <form role="form" class="col-md-10 col-lg-offset-1" name="loginForm">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="login-input">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control" data-ng-model="vm.model.login" id="login" required placeholder="Login" autofocus aria-describedby="sizing-addon1" autofocus>
+                            </div>
+                            <div class="input-group">
+                                <span style="padding: 0 13px;" class="input-group-addon" id="sizing-addon1"><i class="fa fa-lock"></i></span>
+                                <input type="password" id="password" data-ng-model="vm.model.password" required class="form-control" placeholder="Senha" aria-describedby="sizing-addon1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-align-center">
+                        <button class='btn btn-warning btn-login'
+                                ng-click='vm.authenticate()'>
+                            {{vm.status}}
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 <script src="content/js/custom.min.js"></script>
 <script src="content/js/estrutura.js"></script>

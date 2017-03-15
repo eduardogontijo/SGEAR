@@ -1,0 +1,34 @@
+﻿<div ng-controller="listFederationController as vm">
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Lista de Federações</h2>
+                <button class="btn btn-link pull-right" ng-click="vm.addFederation()">+ Adicionar federação</button>
+                <div class="clearfix"></div>
+            </div>
+            <div ng-if="vm.federation.length == 0" class="col-md-12 col-sm-12 col-xs-12">
+                <h1>Você não possui federações cadastradas!</h1>
+            </div>
+            <div  ng-if="vm.federation.length > 0" class="x_content">
+                <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th class="col-md-1"></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="federation in vm.federation">
+                        <tr>
+                            <td>{{federation.name}}</td>
+                            <td><button class="btn btn-default" ng-click="vm.editFederation(federation);"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+                            <td><button class="btn btn-default" ng-click="vm.deleteFederation(federation);"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="content/js/custom.min.js"></script>
+    <script src="content/js/estrutura.js"></script>

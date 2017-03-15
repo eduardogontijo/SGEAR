@@ -16,8 +16,8 @@ namespace IFSP.ADS.API.Controllers
             _service = service;
         }
 
-        [HttpGet, Route("")]
-        public IHttpActionResult Get([FromUri]long federationID)
+        [HttpGet, Route]
+        public IHttpActionResult Get(int federationID)
         {
 
             var response = _service.Get(federationID);
@@ -28,19 +28,19 @@ namespace IFSP.ADS.API.Controllers
             return NotFound();
         }
 
-        [HttpGet, Route("")]
-        public IHttpActionResult List([FromUri]long federationID)
+        [HttpGet, Route]
+        public IHttpActionResult All()
         {
 
             var response = _service.List();
 
-            if (response != null && response.Any())
+            if (response != null)
                 return Ok(response);
 
             return NotFound();
         }
 
-        [HttpPost, Route("")]
+        [HttpPost, Route]
         public IHttpActionResult Create(Federation model)
         {
 
@@ -52,7 +52,7 @@ namespace IFSP.ADS.API.Controllers
             return BadRequest();
         }
 
-        [HttpGet, Route("")]
+        [HttpPut, Route]
         public IHttpActionResult Update(Federation model)
         {
 
@@ -64,8 +64,8 @@ namespace IFSP.ADS.API.Controllers
             return BadRequest();
         }
 
-        [HttpGet, Route("")]
-        public IHttpActionResult Delete([FromUri]long federationID)
+        [HttpDelete, Route]
+        public IHttpActionResult Delete(int federationID)
         {
 
             var response = _service.Delete(federationID);

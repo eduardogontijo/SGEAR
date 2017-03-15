@@ -15,15 +15,13 @@
     <link href="content/css/jqvmap.css" rel="stylesheet">
     <link href="content/css/nprogress.css" rel="stylesheet">
 
-
-
-
     <!--Libs-->
     <script src="scripts/lib/jquery/dist/jquery.min.js"></script>
     <script src="scripts/lib/angular/angular.min.js"></script>
     <script src="scripts/lib/angular-route/angular-route.min.js"></script>
     <script src="scripts/lib/notify/angular-toastr.tpls.js"></script>
     <script src="scripts/lib/ngMask/ngMask.min.js"></script>
+    <script src="scripts/lib/ui-select/select.min.js"></script>
     <!--Libs-->
     <!--Config-->
     <script src="app/app.js"></script>
@@ -36,6 +34,7 @@
     <script src="app/services/modalityService.js"></script>
     <script src="app/services/teamService.js"></script>
     <script src="app/services/contactService.js"></script>
+    <script src="app/services/federationService.js"></script>
     <!--Services-->
     <!--Controllers-->
     <script src="app/category/manageCategoriesController.js"></script>
@@ -46,9 +45,10 @@
     <script src="app/team/listTeamsController.js"></script>
     <script src="app/Contact/editContactController.js"></script>
     <script src="app/Contact/listContactController.js"></script>
+
+    <script src="app/federation/editFederationController.js"></script>
+    <script src="app/federation/listFederationController.js"></script>
     <!--Controllers-->
-
-
 
     <script src="content/js/bootstrap-progressbar.min.js"></script>
     <script src="content/js/bootstrap.min.js"></script>
@@ -63,13 +63,15 @@
     <script src="content/js/dataTables.responsive.js"></script>
     
 
-
-
-   
 </head>
 <body class="nav-md">
     <div class="container body">
-        <div ng-include="'app/components/menu/menu.html'"></div>
+
+        <div>
+            <div ng-include="'app/components/menu/menu.html'"></div>
+        </div>
+        <!--FormAuthentication ($.rootScope.LoggedUser )-->
+        <!--<div ng-include="loggedUser ? 'app/components/menu/menu.html' : 'app/login/login.html'"></div>-->
         <div class="right_col" role="main">
             <ng-view>
             </ng-view>

@@ -1,0 +1,171 @@
+﻿<div ng-controller="editFederationController as vm">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2 ng-if="vm.federationEdit">Editar Federação</h2>
+                    <h2 ng-if="!vm.federationEdit">Adicionar Federação</h2>
+                    <button class="btn btn-link pull-right" ng-click="vm.cancel();">voltar para federações</button>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left" novalidate>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                Nome <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="name" ng-model="vm.federation.name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Digite o nome da federação" required="required" type="text">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                Nome completo<span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="name" ng-model="vm.federation.fullName" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Digite o nome completo da federação" required="required" type="text">
+                            </div>
+                        </div>            
+                        <div class="ln_solid"></div>
+
+                        <!--<div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                Nome <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="name" ng-model="vm.federation.contact.name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Digite o nome do contato" required="required" type="text">
+                            </div>
+                        </div> 
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Telefone <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.contact.phone" ui-mask="(99) 9999-9999" placeholder="Digite o telefone do contato" ui-mask-placeholder data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Celular <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.contact.cellPhone" ui-mask="(99) 99999-9999" placeholder="Digite o celular do contato" ui-mask-placeholder data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Telefone adicional
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.contact.additionalPhone" ui-mask="(99) 9999-9999" placeholder="Digite um telefone adicional" ui-mask-placeholder data-validate-linked="email" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                E-mail <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.contact.email" id="email2" name="confirm_email" placeholder="Digite o e-mail do contato" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">
+                                Descrição <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <textarea id="textarea" ng-model="vm.federation.contact.description" required="required" placeholder="Descreva brevemente este contato" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+                            </div>
+                        </div>-->
+
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">
+                                Contato <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <!--<select class="select2_multiple form-control" name="repeatSelect" id="repeatSelect" ng-model="vm.federation.contact">
+                                    <option ng-repeat="option in vm.contacts" value="{{option.id}}">{{option.name}}</option>
+                                </select>-->
+                                <ui-select ng-model="vm.federation.contacts.selected" style="min-width: 300px;" title="Choose a person">
+                                    <ui-select-match placeholder="Select a person in the list or search his name/age...">{{$select.selected.name}}</ui-select-match>
+                                    <ui-select-choices repeat="contact in  vm.federation.contacts }">
+                                        <div ng-bind-html="contact.name | highlight: $select.search"></div>
+                                    </ui-select-choices>
+                                </ui-select>
+                            </div>
+                        </div>
+
+                  
+
+
+                        <div class="ln_solid"></div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                                CEP <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input id="name" ng-model="vm.federation.address.zip" ui-mask="99999-999" ui-mask-placeholder class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="Digite o CEP" required="required" type="text">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Rua <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.address.street" placeholder="Digite a rua da Federação" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Distrito <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.address.district" placeholder="Digite o distrito da federação" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Zona
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.address.zone" placeholder="Digite a zona da federação" data-validate-linked="email" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Cidade <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.address.city" id="email2" name="confirm_email" placeholder="Digite a cidade da federação" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">
+                                Estado <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" ng-model="vm.federation.address.state" id="email2" name="confirm_email" placeholder="Digite o estado da federação" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-9">
+                                <button type="submit" ng-click="vm.cancel();" class="btn btn-danger pull-right">Cancelar</button>
+                                <button id="send"  ng-disabled="!vm.federation.name" ng-click="vm.save();" type="submit" class="btn btn-success pull-right">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="content/js/custom.min.js"></script>
+            <script src="content/js/estrutura.js"></script>

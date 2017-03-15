@@ -79,28 +79,41 @@
   <ItemGroup>
     <Content Include="app\app.js" />
     <Content Include="app\app.routes.js" />
+    <Content Include="app\athlete\athlete.html" />
+    <Content Include="app\athlete\athleteController.js" />
+    <Content Include="app\athlete\editAthlete.html" />
+    <Content Include="app\athlete\editAthleteController.js" />
     <Content Include="app\category\editCategories.html" />
     <Content Include="app\category\manageCategories.html" />
     <Content Include="app\category\editCategoriesController.js" />
     <Content Include="app\category\manageCategoriesController.js" />
     <Content Include="app\common\common.js" />
     <Content Include="app\components\menu\menu.html" />
+    <Content Include="app\contact\editContact.html" />
+    <Content Include="app\contact\editContactController.js" />
+    <Content Include="app\contact\listContact.html" />
+    <Content Include="app\contact\listContactController.js" />
+    <Content Include="app\federation\editFederation.html" />
+    <Content Include="app\federation\editFederationController.js" />
+    <Content Include="app\federation\listFederation.html" />
+    <Content Include="app\federation\listFederationController.js" />
     <Content Include="app\global.js" />
     <Content Include="app\home\home.html" />
     <Content Include="app\home\homeController.js" />
     <Content Include="app\login\login.html" />
-    <Content Include="app\login\loginController.js" />
+    <Content Include="app\login\AuthenticationController.js" />
     <Content Include="app\modality\editModality.html" />
     <Content Include="app\modality\editModalityController.js" />
     <Content Include="app\modality\listModality.html" />
     <Content Include="app\modality\listModalityController.js" />
+    <Content Include="app\services\federationService.js" />
     <Content Include="app\services\categoryService.js" />
+    <Content Include="app\services\contactService.js" />
     <Content Include="app\services\modalityService.js" />
-    <Content Include="app\services\teamService.js" />
     <Content Include="app\team\editTeam.html" />
     <Content Include="app\team\editTeamController.js" />
-    <Content Include="app\team\listTeamsController.js" />
     <Content Include="app\team\listTeams.html" />
+    <Content Include="app\team\listTeamsController.js" />
     <Content Include="content\css\angular-toastr.min.css" />
     <Content Include="content\css\bootstrap-progressbar-3.3.4.min.css" />
     <Content Include="content\css\bootstrap.css" />
@@ -268,12 +281,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\athlete\" />
     <Folder Include="app\directives\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="app\shell\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="tst.js" />
+    <Content Include="scripts\lib\ui-select\select.min.js" />
+    <Content Include="scripts\lib\ngMask\ngMask.min.js" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>

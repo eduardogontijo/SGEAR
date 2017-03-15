@@ -11,7 +11,7 @@ namespace IFSP.ADS.Models
         public DateTime Birthday { get; set; }
         public float Weight { get; set; }
         public float Height { get; set; }
-        public List<Match> Matches { get; set; }
+        //public List<Match> Matches { get; set; }
         public User User { get; set; }
 
     }

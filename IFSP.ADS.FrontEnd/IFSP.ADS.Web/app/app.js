@@ -4,6 +4,7 @@
     angular.module('app', [
         'ngRoute',
         'toastr',
-        'ui.mask'
+        'ui.mask',
+        'ui.select'
     ]);
 })();

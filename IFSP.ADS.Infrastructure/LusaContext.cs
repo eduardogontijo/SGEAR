@@ -17,7 +17,7 @@ namespace IFSP.ADS.Infrastructure
             
         }
 
-        public DbSet<Address> Addresse { get; set; }
+        public DbSet<Address> Address { get; set; }
         public DbSet<Athlete> Athlete { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<Contact> Contact { get; set; }
